@@ -31,9 +31,9 @@ try {
         $GLOBALS['status'][] = $str; };
 
     // Настройки вашей почты
-    $mail->Host = 'smtp.ukr.net'; // SMTP сервера вашей почты
-    $mail->Username = 'alina_dmitrievna@ukr.net'; // Логин на почте
-    $mail->Password = 'soldatovaalino4ka'; // Пароль на почте
+    $mail->Host = 'smtp.gmail.com'; // SMTP сервера вашей почты
+    $mail->Username = 'mr.sokolsergey@gmail.com'; // Логин на почте
+    $mail->Password = 'igvz ujem nbth aeqi'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->SMTPOptions = array(
         'ssl' => array(
