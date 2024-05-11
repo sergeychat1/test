@@ -31,9 +31,9 @@ try {
         $GLOBALS['status'][] = $str; };
 
     // Настройки вашей почты
-    $mail->Host = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username = 'mr.sokolsergey@gmail.com'; // Логин на почте
-    $mail->Password = '123321123As@'; // Пароль на почте
+    $mail->Host = 'smtp.ukr.net'; // SMTP сервера вашей почты
+    $mail->Username = 'alina_dmitrievna@ukr.net'; // Логин на почте
+    $mail->Password = 'soldatovaalino4ka'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->SMTPOptions = array(
         'ssl' => array(
@@ -42,7 +42,7 @@ try {
             'allow_self_signed' => true
         )
     );
-    $mail->Port = 587;
+    $mail->Port = 465;
     $mail->setFrom('mr.sokolsergey@gmail.com', 'Тест Тест'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
