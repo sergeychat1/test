@@ -6,7 +6,7 @@ require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
-$mail = $_POST['mail'];
+$email = $_POST['email'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 
@@ -15,7 +15,7 @@ $title = "Новое обращение Best Tour Plan";
 $body = "
 <h2>Новое письмо</h2>
 <b>Имя:</b> $name<br>
-<b>Пошта:</b> $mail<br><br>
+<b>Пошта:</b> $email<br><br>
 <b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
 ";
@@ -28,7 +28,8 @@ try {
     $mail->SMTPAuth = true;
     //$mail->SMTPDebug = 2;
     $mail->Debugoutput = function ($str, $level) {
-        $GLOBALS['status'][] = $str; };
+        $GLOBALS['status'][] = $str;
+    };
 
     // Настройки вашей почты
     $mail->Host = 'smtp.gmail.com'; // SMTP сервера вашей почты
