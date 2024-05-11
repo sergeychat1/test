@@ -31,7 +31,7 @@ try {
         $GLOBALS['status'][] = $str; };
 
     // Настройки вашей почты
-    $mail->Host = 'smtp-relay.gmail.com'; // SMTP сервера вашей почты
+    $mail->Host = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username = 'mr.sokolsergey@gmail.com'; // Логин на почте
     $mail->Password = '123321123As'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
@@ -42,7 +42,7 @@ try {
             'allow_self_signed' => true
         )
     );
-    $mail->Port = 465;
+    $mail->Port = 587;
     $mail->setFrom('mr.sokolsergey@gmail.com', 'Тест Тест'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
